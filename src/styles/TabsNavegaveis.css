@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap");
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+}
+
+.tabs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-tabs button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-tabs button.active {
+    background-color: #0056b3;
+}
+
+.nav-tabs button:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid #ddd; /* Adiciona uma linha acima do conteúdo */
+    background-color: #f9f9f9; /* Fundo suave para o conteúdo */
+    border-radius: 5px;
+}
+
+/* Opção para esconder abas inativas */
+.tab-content.hidden {
+    display: none;
+}

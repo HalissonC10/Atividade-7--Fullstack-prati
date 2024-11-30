@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Estilo para o conteiner principal */
+ body {
+    font-family: "Poppins", sans-serif;
+ }
+
+.color-changer-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.5s ease;
+}
+
+/* Estilo para o titulo */
+.title {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo básico dos botoes */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Estilo para o botao "Iniciar" */
+.start-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.start-button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+/* Estilo para o botao "Parar" */
+.stop-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.stop-button:disabled {
+    background-color: #ef9a9a;
+    cursor: not-allowed;
+}
+
+/* Efeito de transformacao ao clicar nos botoes */
+button:active {
+    transform: scale(0.95);
+}

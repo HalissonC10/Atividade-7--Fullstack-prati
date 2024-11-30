@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .calculadora {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .calculadora input {
+    width: 80%; /* Define a largura do campo de entrada */
+    max-width: 300px; /* Limita a largura máxima para tamanhos maiores */
+    padding: 10px; /* Adiciona padding para espaçamento interno */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+  
+  input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  span {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  button.concluir {
+    background-color: #28a745;
+    margin-right: 5px;
+  }
+  
+  button.concluir:hover {
+    background-color: #218838;
+  }
+  
+  button.remover {
+    background-color: #dc3545;
+  }
+  
+  button.remover:hover {
+    background-color: #c82333;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
